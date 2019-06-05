@@ -1,0 +1,72 @@
+:root {
+    --navMain:#252D75;
+    --navOnHover: #31A5E5;
+    --navDropdownOption: #F5F5F5;
+}
+
+html {
+    margin: -8px;
+    padding: 0;
+    font-size: 12px;
+}
+
+.mainNavbar {
+    width: 100vw;
+    height: auto;
+    font-size: 2rem;
+    color: var(--navDropdownOption);
+    line-height: 100%;
+}
+
+.mainNavbar ul {
+    list-style: none;
+    padding: 0;
+    background-color: var(--navMain);
+}
+
+.mainNavbar a {  
+    display: block;
+    text-decoration: none;
+    color: var(--navDropdownOption);
+    margin: 0;
+    padding: 0;
+}
+
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    height: 3em;
+    margin: 0;
+}
+
+.button {
+    background-color: var(--navMain);
+    width: 150px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.navDropdownContainer {
+    display: none;
+    position: relative;
+    padding: 0;
+}
+
+.dropdown:hover .navDropdownContainer {
+    display: block;
+}
+
+.button:hover {
+    background-color: var(--navOnHover);
+    transition: all 0.12s ease-in-out;
+}
+
+.option {
+    color: #111;
+    background-color: var(--navDropdownOption);
+}
+
+#contactLink {
+    margin-left: auto;
+}
