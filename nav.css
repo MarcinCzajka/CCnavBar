@@ -51,6 +51,7 @@ html {
     display: none;
     position: relative;
     padding: 0;
+    box-shadow: 15px 15px 35px -15px #999;
 }
 
 .dropdown:hover .navDropdownContainer {
