@@ -1,21 +1,7 @@
-.example {
-    display: -ms-grid;
-    display: grid;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-    -webkit-user-select: none;
-       -moz-user-select: none;
-        -ms-user-select: none;
-            user-select: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(white), to(black));
-    background: -webkit-linear-gradient(top, white, black);
-    background: -o-linear-gradient(top, white, black);
-    background: linear-gradient(to bottom, white, black);
-}:root {
+:root {
     --navMain:#252D75;
     --navOnHover: #31A5E5;
-    --navDropdownOption: #F5F5F5;
+    --basicWhite: #F5F5F5;
 }
 
 html {
@@ -28,7 +14,7 @@ html {
     width: 100vw;
     height: auto;
     font-size: 2rem;
-    color: var(--navDropdownOption);
+    color: var(--basicWhite);
     line-height: 100%;
 }
 
@@ -41,7 +27,7 @@ html {
 .mainNavbar a {  
     display: block;
     text-decoration: none;
-    color: var(--navDropdownOption);
+    color: var(--basicWhite);
     margin: 0;
     padding: 0;
 }
@@ -60,7 +46,7 @@ html {
 
 .button {
     background-color: var(--navMain);
-    width: 150px;
+    width: 10em;
     padding-top: 1em;
     padding-bottom: 1em;
     text-align: center;
@@ -92,9 +78,45 @@ html {
 
 .option {
     color: #111;
-    background-color: var(--navDropdownOption);
+    background-color: var(--basicWhite);
 }
 
 #contactLink {
     margin-left: auto;
+}
+
+@media screen and (max-width: 1200px) {
+	html {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	html {
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.button {
+		width: 7em;
+	}
+}
+
+@media screen and (max-width: 440px) {
+	html {
+		font-size: 6px;
+	}
+	.button {
+		width: 7em;
+	}
+}
+
+@media screen and (max-width: 330px) {
+	html {
+		font-size: 5px;
+	}
+	.button {
+		width: 5em;
+	}
 }
