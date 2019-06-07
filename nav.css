@@ -33,13 +33,13 @@ html {
 }
 
 .navbarContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    flex-direction: row;
+    	-webkit-box-orient: horizontal;
+    	-webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row;
     height: 3em;
     margin: 0;
 }
@@ -53,15 +53,15 @@ html {
 }
 
 .navDropdownContainer {
-    visibility: hidden;
-	opacity: 0;
-	-webkit-transition: visibility 0s, opacity 0.2s linear;
-	-o-transition: visibility 0s, opacity 0.2s linear;
-	transition: visibility 0s, opacity 0.2s linear;
     position: relative;
+    visibility: hidden;
+    opacity: 0;
     padding: 0;
-    -webkit-box-shadow: 15px 15px 35px -15px #999;
-            box-shadow: 15px 15px 35px -15px #999;
+    transition: visibility 0s, opacity 0.2s linear;
+        -webkit-transition: visibility 0s, opacity 0.2s linear;
+        -o-transition: visibility 0s, opacity 0.2s linear;
+    box-shadow: 15px 15px 35px -15px #999;
+        -webkit-box-shadow: 15px 15px 35px -15px #999;
 }
 
 .dropdown:hover .navDropdownContainer {
